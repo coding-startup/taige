@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./iconfont.css">
+  <title>Document</title>
+  <style>
+    .iconfont-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .iconfont-list .iconfont {
+      transition: border-color 300ms;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .iconfont-list .iconfont:hover {
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+  <ul class="iconfont-list"></ul>
+  <br>
+  <input type="text">
+  <script src="../../lib/js/jquery.min@2.0.0.js"></script>
+  <script>
+    Array.prototype.unique = function () {
+      const origin = this
+
+      const array = []
+
+      for (let i = 0; i < origin.length; i++) if (array.indexOf(origin[i]) === -1) array.push(origin[i])
+
+      return array
+    }
+
+    const arr = [
+      '&#xe688;',
+      '&#xe616;',
+      '&#xe62f;',
+      '&#xe675;',
+      '&#xe601;',
+      '&#xe65f;',
+      '&#xe604;',
+      '&#xe661;',
+      '&#xe858;',
+      '&#xe606;',
+      '&#xe61c;',
+      '&#xe617;',
+      '&#xe600;',
+      '&#xe619;',
+      '&#xe60b;',
+      '&#xe638;',
+      '&#xe640;',
+      '&#xe640;',
+      '&#xe640;',
+      '&#xe640;',
+      '&#xe60a;',
+      '&#xe859;',
+      '&#xe607;',
+      '&#xe620;',
+      '&#xe630;',
+      '&#xe698;',
+      '&#xe658;',
+      '&#xe688;',
+      '&#xe616;',
+      '&#xe62f;',
+      '&#xe675;',
+      '&#xe601;',
+      '&#xe65f;',
+      '&#xe604;',
+      '&#xe661;',
+      '&#xe858;',
+      '&#xe606;',
+      '&#xe61c;',
+      '&#xe617;',
+      '&#xe600;',
+      '&#xe619;',
+      '&#xe60b;',
+      '&#xe638;',
+      '&#xe6d8;',
+      '&#xe65c;',
+      '&#xe64b;',
+      '&#xe633;',
+      '&#xe650;',
+      '&#xe623;',
+      '&#xe60a;',
+      '&#xe859;',
+      '&#xe618;',
+      '&#xe607;',
+      '&#xe620;',
+      '&#xe630;',
+      '&#xe698;',
+      '&#xe658;'
+    ]
+
+    $.each(arr.unique(), function (index, item) {
+      $('<li/>').addClass('iconfont').html(item).click(copy.bind(this, item)).appendTo('ul')
+    })
+
+    function copy (copyValue) {
+      const ipt = $('<input/>').val(copyValue).css('opacity', 0).appendTo('ul')
+
+      ipt.get(0).select()
+
+      document.execCommand('copy')
+
+      ipt.remove()
+    }
+  </script>
+</body>
+</html>
