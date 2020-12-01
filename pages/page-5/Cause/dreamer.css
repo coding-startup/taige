@@ -2,16 +2,16 @@
 	#dreamer{
 		margin: 0 auto;
 	}
-	.dreamer-add{
+	.add{
 		width: 100%;
 		height: 260px;
 		background: rgb(243,243,243);
 		cursor: pointer;
 	}
-	.dreamer-box{
+	.box{
 		width: 100%;
 	}
-	.dreamer-box>p>span{
+	.box>p>span{
 		font-size: 12px;
 	}
 }
@@ -23,13 +23,13 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	.dreamer-add{
+	.add{
 		width: 21%;
 		height: 100%;
 		background: rgb(243,243,243);
 		cursor: pointer;
 	}
-	.dreamer-box{
+	.box{
 		width: 77%;
 	}
 	

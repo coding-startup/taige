@@ -1,4 +1,4 @@
-.dreamer-add p {
+.add p {
 	font-size: 23px;
 	width: 100%;
 	height: 65px;
@@ -6,7 +6,7 @@
 	padding: 20px;
 	color: red;
 }
-.dreamer-add ul li{
+.add ul li{
 	width: 100%;
 	height: 65px;
 	font-size: 16px;
@@ -15,10 +15,10 @@
 	display: flex;
 	justify-content: space-between;
 }
-.dreamer-add ul li span{
+.add ul li span{
 	color: red;
 }
-.dreamer-add ul a{
+.add ul a{
 	color: #000;
 }
 .nav{
