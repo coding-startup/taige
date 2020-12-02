@@ -166,17 +166,13 @@ body {
 
 .--header-container .navs-wrap {
   display: none;
-  transition: transform 400ms;
-  transform: translate3d(100%, 0, 0);
   position: absolute;
   top: 0;
   right: 0;
+  transition: transform 0ms;
+  transform: translate3d(100%, 0, 0);
   width: 50%;
   max-width: 230px;
-}
-
-.--header-container .navs-wrap.active {
-  transform: translate3d(0, 0, 0);
 }
 
 .--header-container .navs-wrap .nav-list {

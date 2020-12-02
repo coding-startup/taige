@@ -109,8 +109,22 @@ $(function () {
 
   const root = $('.--header-container')
 
+  const navsWrap = root.find('.navs-wrap')
+
   root.find('.logo-wrap .nav-btn').click(() => {
-    root.find('.navs-wrap').toggleClass('active')
+    navsWrap.toggleClass('active')
+
+    navsWrap.hasClass('active') ? (
+      navsWrap.css('transition', 'transform 400ms'),
+      navsWrap.animate({}, function () {
+        $(this).css('transform', 'translate3d(0, 0, 0)')
+      })
+    ) : (
+      
+      navsWrap.animate({}, function () {
+        $(this).css('transform', 'translate3d(100%, 0, 0)')
+      })
+    )
   })
 
   const navList = root.find('.nav-wrap .nav-list')
