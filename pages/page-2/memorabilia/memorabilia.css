@@ -1,133 +1,95 @@
-.company-main {
+.container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.memoy-main{
+	width: 100%;
+	background-image:url(../../../assets/imgs/page2/live.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.memoy-main .content{
+	width: 1100px;
+	margin:0 auto;
+}
+.memoy-main .image{
+	width: 1100px;
+}
+.memoy-main .image img{
 	width: 100%;
 }
-/* 给a标签设置重置样式 */
-.company-main a:hover {
-	text-decoration: none;
-}
-.company-main .content .company-filue a {
-	color: inherit;
-}
-/* content设置 */
-.company-main .content {
-	max-width: 1100px;
-	margin: 0 auto;
-	overflow: auto;
-}
-/* 主体左边整体样式 */
-.company-main .content .company-filue {
-	width: 21%;
-	max-width: 230px;
-	background: #f3f3f3;
-	float: left;
-}
-/* 走进太格 */
-.company-main .content .company-filue>li:first-child {
-	height: 65px;
-	line-height: 65px;
-	color: #ce2a2b;
-	font-size: 23px;
-	padding-left: 15px;
-	padding-right: 16px;
-}
-/* 从公司简介开始的整体li的样式 */
-.company-main .content .company-filue .mediatab {
-	height: 65px;
-	background: #f3f3f3;
-	line-height: 65px;
-	font-size: 13px;
-	padding-right: 16px;
-	border-bottom: 1px solid #ddd;
-	box-shadow: 0 1px 0 0 #f3f3f3;
-}
-/* 设置不同样式的css  border 和background */
-.company-main .content .company-filue .things {
-	border-left: 5px solid #ce2a2b;
-	background: #fff;
-}
-/* li 里面的a 的设置 */
-.company-main .content .company-filue .mediatab a {
-	margin-left: 15px;
+.memoy-main .memoy-event{
 	width: 100%;
-	max-width: 215px;
+}
+.memoy-main .memoy-event .memoy-event-left,.memoy-main .memoy-event .memoy-event-right{
+	float:left;
+	width: 50%;
+}
+.memoy-main .memoy-event .memoy-event-left .year{
+	margin-right: 30px;
+	text-align:right;
+	height: 71px;
+	position:relative;
+}
+.memoy-main .memoy-event .memoy-event-left .year .circle{
+	height: 16px;
+	width: 16px;
+	background: #b81d19;
+	border-radius: 10px;
+	position: absolute;
+	top: 34px;
+	left:542px;
+}
+.memoy-main .memoy-event .memoy-event-right .event{
+	padding-left:30px;
+	border-left: 1px solid #b81d19;
+	box-shadow: -1px 0 0 0 #b81d19;
+}
+.memoy-main .memoy-event .memoy-event-right .event h3 p{
+	line-height: 36px;
+	font-size:18px;
+}
+.memoy-main .memoy-event .memoy-event-right .event h3{
+	line-height: 60px;
+	font-size: 18px;
+	border-radius: 20px;
+	width: 80%;
 	display: inline-block;
-	padding-right: 16px;
+	padding: 0 20px;
+	margin-bottom: 20px;
+	color: #fff;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: #30344F;
+	font-weight: normal;
 }
-/* li 里面的a 的 span的设置 */
-.company-main .content .company-filue .mediatab a span {
-	float: right;
-	color: #CE2A2B;
-}
-/* 主页右边 */
-.company-main .content .intr {
-	float: right;
-	width: 77%;
-}
-/* 公司简介的设置 */
-.company-main .content .intr .title-page{
-	height: 65px;
-	line-height: 65px;
-	border-bottom: 1px solid #ddd;
-	font-size: 16px;
-	color: #000;
-	display:flex;
-	justify-content: space-between;
-	margin-bottom: 44px;
-}
-/* 公司简介右边span 的设置 */
-.company-main .content .intr .title-page span{
-	color:#444;
-}
-.company-main .content .intr .title-page span+span{
-	font-size:13px;
-}
-.company-main .content .intr .title-page span a{
-	color:rgb(85,26,139);
-}
-/* 设置主体右边 .intr-comment 里 的整体内容*/
-.company-main .content .intr .intr-comment{
-	width: 100%;
-}
-/* 第一张图片 */
-.company-main .content .intr .intr-comment .address{
-	width: 100%;
-	padding-bottom:17px;
-	border-bottom: 1px dashed #ddd;
-}
-.company-main .content .intr .intr-comment .address img{
-	width: 800px;
-}
-.company-main .content .intr .intr-comment .article-content{
-	color:#555555;
-	font-size:13px;
-	padding-top:32px;
-	border-bottom: 1px dashed #ddd;
-}
-/* 文章 */
-.company-main .content .intr .intr-comment .article-content p{
-	line-height:26px;
-	margin-bottom: 32px;
-}
-.company-main .content .intr .intr-comment .article-content p:last-child{
-	margin-bottom: 6px;
-}
-/* 第二张图片 */
-.company-main .content .intr .intr-comment .company-image{
-	border-bottom: 1px solid #ddd;
-}
-.company-main .content .intr .intr-comment .company-image img{
-	margin-top:24px;
-	margin-bottom: 145px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 媒体查询开始 */
 /* 大于1100px */
-@media screen and (min-width:1100px) {
+/* @media screen and (min-width:1100px) {
 	.content{
 		width: 1100px;
 		margin: 0 auto;
 	}
 }
-/* 在768px和1100px中间 */
+/* 在768px和1100px中间 
 @media screen and (min-width:768px) and (max-width:1100px){
 	.content{
 		width: 100%;
@@ -135,8 +97,8 @@
 	.company-main .content .intr .intr-comment .address img{
 		width: 100%;
 	}
-}
-/* 小于768px*/
+}*/
+/* 小于768px
 @media screen and (max-width:768px){
 	.content{
 		width: 100%;
@@ -153,4 +115,4 @@
 	.company-main .content .intr .intr-comment .address img{
 		width: 100%;
 	}
-}
+} */
