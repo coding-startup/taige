@@ -33,10 +33,8 @@
             $('<link/>', { rel: 'stylesheet', href: './assets/iconfont/iconfont.css' }),
             $('<link/>', { rel: 'stylesheet', href: './template/common/header/index.css' })
         ).append(
-            $('<script/>', { src: './lib/js/jquery.min@2.0.0.js' }),
             $('<script/>', { src: './template/common/header/index.js' })
         )
     })
     ```
-
     
