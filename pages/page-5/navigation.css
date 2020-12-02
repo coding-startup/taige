@@ -21,7 +21,7 @@
 .add ul a{
 	color: #000;
 }
-.nav{
+.box .nav{
 	display: flex;
 	justify-content: space-between;
 	height: 65px;

@@ -14,7 +14,26 @@
 	.box{
 		width: 77%;
 	}
-	.box>img{
+	
+}
+@media screen and (max-width:768px){
+	#dreamer{
+		margin: 0 auto;
+	}
+	.add{
+		width: 100%;
+		height: 260px;
+		background: rgb(243,243,243);
+		cursor: pointer;
+	}
+	.box{
 		width: 100%;
 	}
+	.box>p>span{
+		font-size: 12px;
+	}
+}
+.box>img{
+	width: 100%;
+	margin-top: 20px;
 }
