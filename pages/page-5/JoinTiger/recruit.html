@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../../assets/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../assets/iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="recruit.css"/>
+		<link rel="stylesheet" type="text/css" href="../navigation.css"/>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="recruit">
+			<div class="add">
+				<p>媒体中心</p>
+				<ul>
+					<a href="../Cause/dreamer.html"><li>
+						致逐梦者
+						<span class="iconfont">&#xe640;</span>
+					</li></a>
+					<a href="../personnel/idea.html"><li>
+						人才理念
+						<span class="iconfont">&#xe640;</span>
+					</li></a>
+					<a href="#"><li style="border-left: 5px solid #ce2a2b; background: #fff;">
+						加入太格
+						<span class="iconfont">&#xe640;</span>
+					</li></a>
+				</ul>
+			</div>
+			<div class="box">
+				<ul>
+					<p>招聘类别:</p>
+					<li  style="background: red; width: 50px;">全部</li>
+					<li>社会招聘</li>
+					<li>校园招聘</li>
+				</ul>
+				<ol>
+					<p>工作地点:</p>
+					<li  style="background: red; width: 50px;">全部</li>
+					<li>青海</li>
+					<li>甘肃</li>
+					<li>内蒙古</li>
+					<li>吉林</li>
+					<li>辽宁</li>
+					<li>河北</li>
+					<li>河南</li>
+					<li>山西</li>
+				</ol>
+				<div class="tab" style="margin-top: 20px;">
+					<p style="width: 40%;"><b>职位名称</b></p>
+					<p><b>工作地点</b></p>
+					<p><b>招聘人数</b></p>
+					<p><b>发布时间</b></p>
+				</div>
+
+
+
+
+				<div class="tab">
+					<p style="width: 40%;">java开发工程师</p>
+					<p>北京、南昌</p>
+					<p>2</p>
+					<p>2019-11-04</p>
+				</div>
+				<div class="tab">
+					<p style="width: 40%;">电气设计工程师</p>
+					<p>南昌</p>
+					<p>2</p>
+					<p>2019-11-04</p>
+				</div>
+				<div class="tab">
+					<p style="width: 40%;">项目经理</p>
+					<p>北京、南昌</p>
+					<p>2</p>
+					<p>2019-11-04</p>
+				</div>
+				<div class="tab">
+					<p style="width: 40%;">销售经理</p>
+					<p>北京、南昌</p>
+					<p>若干</p>
+					<p>2019-11-04</p>
+				</div>
+				<div class="tab">
+					<p style="width: 40%;">项目现场调试工程师</p>
+					<p>北京、南昌</p>
+					<p>10</p>
+					<p>2018-11-04</p>
+				</div>
+
+				<div class="tab">
+					<p style="width: 40%;">采购助理</p>
+					<p>南昌</p>
+					<p>2</p>
+					<p>2019-11-04</p>
+				</div>
+				<p><span style="background: red;">1</span><span>2</span><span>3</span><span>></span></p>
+			</div>
+		</div>
+	</body>
+	<script src="../../../lib/js/jquery.min@2.0.0.js"></script>
+	<script>
+		$('#header').load('../../../template/common/header/index.html', function () {
+		    $(this).prepend(
+		        $('<link/>', { rel: 'stylesheet', href: '../../../assets/css/reset.css' }),
+		        $('<link/>', { rel: 'stylesheet', href: '../../../assets/iconfont/iconfont.css' }),
+		        $('<link/>', { rel: 'stylesheet', href: '../../../template/common/header/index.css' })
+		    ).append(
+		        $('<script/>', { src: '../../../lib/js/jquery.min@2.0.0.js' }),
+		        $('<script/>', { src: '../../../template/common/header/index.js' })
+		    )
+		})
+	</script>
+</html>
