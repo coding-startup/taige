@@ -1,33 +1,45 @@
 .--footer-container
   position: relative
   background-color: #282828
+  .wrap
+    max-width: 1100px
+    margin: 0 auto
   .back-top
-    background-color: #ffffff
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 10
+    transform: translate(0, -110%)
+    background-color: #282828
     .iconfont
       width: 45px
       height: 45px
       line-height: 45px
       margin: 0 0 0 auto
       text-align: center
-      background-color: #282828
       color: #ffffff
       cursor: pointer
   .link-wrap
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
     height: 49px
     line-height: 49px
     background-color: #b81d19
     .link
-      color: #ffffff
-      font-size: 14px
+      max-width: 1100px
+      display: block
+      margin: 0 auto
+      .a
+        color: #ffffff
+        font-size: 14px
   .footer-main
     display: flex
     flex-wrap: wrap
     align-items: center
-    // justify-content: center
-    margin: 0 auto
-    width: 100%
-    max-width: 1100px
-    padding: 0 0 40px 0
+    padding: 49px 0 40px 0
+    background-color: #282828
     .left-wrap,
     .center-wrap,
     .right-wrap
