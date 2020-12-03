@@ -1,6 +1,8 @@
 .--footer-container {
   position: relative;
   background-color: #282828;
+  margin-top: 60px;
+  box-sizing: content-box;
 }
 
 .--footer-container .wrap {
