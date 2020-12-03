@@ -38,3 +38,28 @@
     })
     ```
     
+  
+- 2020/12/3 - tension
+
+  - 页脚组件，位置为：`template/common/footer/`
+
+    > 引用页脚组件的页面需要提供一个容器承载页脚组件，然后使用 load 方法及 `相对路径` 去加载页脚组件和页脚组件的依赖。如下示例：
+
+    ```html
+    <div id="footer"></div>
+    ```
+
+    ```js
+    $('#footer').load('./template/common/footer/index.html', function () {
+        $(this).prepend(
+        	$('<link/>', { rel: 'stylesheet', href: './assets/iconfont/iconfont.css' }),
+            $('<link/>', { rel: 'stylesheet', href: './template/common/footer/index.css' })
+        ).append(
+            $('<script/>', { src: './template/common/footer/index.js' })
+        )
+    })
+    ```
+
+    
+
+    
