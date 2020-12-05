@@ -136,7 +136,7 @@ $(function () {
   $.each(navListArr, (index, item) => {
     const nav = $(
       $('<div/>').append(
-        $('<li/>', { class: 'nav'}).append(
+        $('<li/>', { class: 'navs'}).append(
           $('<div/>', { class: 'title' }).append(
             // $('<a/>', { class: 'a', href: item.href })
             item.children && item.children.length ? (
