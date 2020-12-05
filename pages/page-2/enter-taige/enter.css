@@ -37,7 +37,7 @@
 	margin-right: 22px;
 }
 .banner .banner-list .banner-list-top .white{
-	background-color: #000;
+	background-color: #ccc;
 	max-width:748px;
 }
 .banner .banner-list .banner-list-bottom{
@@ -63,34 +63,7 @@
 	height: 200px;
 	background-color: #0f3e74;
 }
-/* 媒体查询开始 */
-@media screen and (min-width:1100px) {
-	.container{
-		width: 1100px;
-	}
+div{
+	border:1px solid #ccc;
 }
-@media screen and (min-width:1023px) and (max-width:1100px){
-	.container{
-		width: 100%;
-	}
-	.row{
-		width: 100%;
-	}
-	.banner{
-		width: 100%;
-		overflow:hidden;
-	}
-	.banner .bannner-list{
-		width: 100%;
-	}
-	.banner .banner-list .banner-list-top{
-		width: 100%;
-	}
-	.banner .banner-list .banner-list-bottom{
-		width: 100%;
-	}
-	.banner .banner-list .banner-list-top .red,.banner .banner-list .banner-list-top .white{
-		width: 100%;
-		max-width:100%;
-	}
-}
+
