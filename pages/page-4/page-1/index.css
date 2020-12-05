@@ -1,0 +1,110 @@
+#app #main {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#app #main .tab-wrap {
+  flex: 0 0 21%;
+  max-width: 230px;
+}
+
+#app #main .tab-wrap .tab-title {
+  height: 65px;
+  line-height: 65px;
+  text-indent: 15px;
+  font-size: 23px;
+  color: #ce2a2b;
+  background-color: #f3f3f3;
+}
+
+#app #main .tab-wrap .tab-list {
+  background-color: #f3f3f3;
+}
+
+#app #main .tab-wrap .tab-list.active .tab .text {
+  background-color: #ffffff;
+  border-color: #ce2a2b;
+}
+
+#app #main .tab-wrap .tab-list .tab .text {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+  padding: 0 0 0 13px;
+  padding-right: 15px;
+  font-size: 13px;
+  background-color: #f3f3f3;
+  border-left: 5px solid transparent;
+}
+
+#app #main .tab-wrap .tab-list .tab .text .iconfont {
+  position: absolute;
+  right: 15px;
+  z-index: 10;
+  color: #ce2a2b;
+}
+
+#app #main .tab-wrap .tab-list .tab .children-list {
+  display: none;
+}
+
+#app #main .tab-wrap .tab-list .tab .children-list .item {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 0 0 25px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#app #main .tab-wrap .tab-list .tab .children-list .item.active {
+  color: #ce2a2b;
+}
+
+#app #main .tab-wrap .tab-list .tab .children-list .item, #app #main .tab-wrap .tab-list .tab .children-list .item a {
+  color: #666666;
+}
+
+#app #main .tab-wrap .tab-list .tab .children-list .item.active, #app #main .tab-wrap .tab-list .tab .children-list .item a.active {
+  color: #ce2a2b;
+}
+
+#app #main .tab-wrap .tab-list .tab .children-list .item:active, #app #main .tab-wrap .tab-list .tab .children-list .item a:active {
+  color: #666666;
+}
+
+#app #main .content {
+  flex: 1;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+#app #main .content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 40px;
+}
+
+#app #main .content .header .link {
+  font-size: 13px;
+}
+
+#app #main .content .header .link .iconfont {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  #app #main {
+    flex-direction: column;
+  }
+  #app #main .tab-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
