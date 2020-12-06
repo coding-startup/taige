@@ -71,6 +71,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="footer"></div>
 	</body>
 	<script src="../../../lib/js/jquery.min@2.0.0.js"></script>
 	<script>
@@ -82,6 +83,14 @@
 		    ).append(
 		        $('<script/>', { src: '../../../lib/js/jquery.min@2.0.0.js' }),
 		        $('<script/>', { src: '../../../template/common/header/index.js' })
+		    )
+		})
+		$('#footer').load('../../../template/common/footer/index.html', function () {
+		    $(this).prepend(
+		    	$('<link/>', { rel: 'stylesheet', href: '../../../assets/iconfont/iconfont.css' }),
+		        $('<link/>', { rel: 'stylesheet', href: '../../../template/common/footer/index.css' })
+		    ).append(
+		        $('<script/>', { src: '../../../template/common/footer/index.js' })
 		    )
 		})
 	</script>
