@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./lib/css/animate.min@4.1.1.css">
   <link rel="stylesheet" href="./lib/css/ww-index.css">
+  <link rel="stylesheet" href="./template/common/header/index.css">
+  <link rel="stylesheet" href="./template/common/footer/index.css">
+  <link rel="stylesheet" href="./assets/iconfont/iconfont.css">
   <link href="https://cdn.bootcss.com/Swiper/4.2.2/css/swiper.min.css" rel="stylesheet">
   <title>太格时代</title>
 </head>
 <body>
   <div id="tg-index">
+	<div id="header"></div>
     <!-- 头轮播 -->
     <div class="wrap">
       <!--banner-->
@@ -338,7 +343,8 @@
     <span><span>北京总公司电话:010-63356521</span><span>江西分公司电话:0791-83810552</span></span>
   </div>
 </div>
-  
+<div id="footer"></div>
+  </div>
   <script src="./lib/js/swiper.min.js"></script>
   <script src="./lib/js/rem.js"></script>
   <script src="./lib/js/jquery.min@2.0.0.js"></script>
@@ -351,6 +357,16 @@
 </body>
 <script>        
   $(function(){
+	  $('#header').load('./template/common/header/index.html', function () {
+		  $(this).append(
+			$('<script/>', { src: './template/common/header/index.js'})
+		  )
+	  })
+	  $('#footer').load('./template/common/footer/index.html', function () {
+		  $(this).append(
+			$('<script/>', { src: './template/common/footer/index.js'})
+		  )
+	  })
     var mySwiper = new Swiper ('.mySwiper1', {
       loop: true,
       effect : 'slide',//slide的切换效果，默认为"slide"（位移切换），可设置为'slide'（普通切换、默认）,"fade"（淡入）"cube"（方块）"coverflow"（3d流）"flip"（3d翻转）。
