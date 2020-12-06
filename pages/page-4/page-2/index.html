@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>产品中心 - 太格时代</title>
+</head>
+<body>
+  <div id="app">
+    <div id="header"></div>
+    <main id="main">
+      <div class="tab-wrap">
+        <div class="tab-title">产品中心</div>
+      </div>
+      <div class="content">
+        <div id="swiper"></div>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </div>
+  <script src="../../../lib/js/jquery.min@2.0.0.js"></script>
+  <script>
+    $('#header').load('../../../template/common/header/index.html', function () {
+      $(this).prepend(
+        $('<link/>', { rel: 'stylesheet', href: '../../../assets/css/reset.css' }),
+        $('<link/>', { rel: 'stylesheet', href: '../../../assets/iconfont/iconfont.css' }),
+        $('<link/>', { rel: 'stylesheet', href: '../../../template/common/header/index.css' })
+      ).append(
+        $('<script/>', { src: '../../../template/common/header/index.js' })
+      )
+    })
+
+    $('#footer').load('../../../template/common/footer/index.html', function () {
+      $(this).prepend(
+        $('<link/>', { rel: 'stylesheet', href: '../../../template/common/footer/index.css' })
+      ).append(
+        $('<script/>', { src: '../../../template/common/footer/index.js' })
+      )
+    })
+
+    $('#swiper').load('../../../template/page-4/swiper/index.html', function () {
+      $(this).prepend(
+        $('<link/>', { rel: 'stylesheet', href: '../../../lib/css/swiper.min@5.4.5.css' }),
+        $('<link/>', { rel: 'stylesheet', href: '../../../template/page-4/swiper/index.css' })
+      ).append(
+        $('<script/>', { src: '../../../lib/js/swiper.min@5.4.5.js' }),
+        $('<script/>', { src: '../../../template/page-4/swiper/index.js' })
+      )
+    })
+  </script>
+</body>
+</html>
