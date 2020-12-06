@@ -135,6 +135,9 @@
 	.content{
 		width: 100%;
 	}
+	.honors-main .content .intr .intr-comment .address img{
+		width: 100%;
+	}
 }
 @media screen and (max-width:768px){
 	.content{
@@ -148,5 +151,8 @@
 	.honors-main .content .honors-filue .mediatab a{
 		width: 100%;
 		max-width:100%;
+	}
+	.honors-main .content .intr .intr-comment .address img{
+		width: 100%;
 	}
 }

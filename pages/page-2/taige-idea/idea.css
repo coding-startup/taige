@@ -135,6 +135,9 @@
 	.content{
 		width: 100%;
 	}
+	.idea-main .content .intr .intr-comment .address img{
+		width: 100%;
+	}
 }
 @media screen and (max-width:768px){
 	.content{
@@ -148,5 +151,8 @@
 	.idea-main .content .idea-filue .mediatab a{
 		width: 100%;
 		max-width:100%;
+	}
+	.idea-main .content .intr .intr-comment .address img{
+		width: 100%;
 	}
 }
