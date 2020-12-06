@@ -1,16 +1,18 @@
-.container-fluid{
-	padding-right: 0px;
-	padding-left: 0px;
-}
 .memoy-main{
 	width: 100%;
 	background-image:url(../../../assets/imgs/page2/live.png);
 	background-size:cover;
 	background-repeat:no-repeat;
 }
+.memoy-main .clearfix{
+	content:"";
+	display:block;
+	clear:both;
+}
 .memoy-main .content{
 	width: 1100px;
 	margin:0 auto;
+	
 }
 .memoy-main .image{
 	width: 1100px;
@@ -96,6 +98,27 @@
 	top: 34px;
 	left:-8px;
 }
+@media screen and (min-width:1100px) {
+	.content{
+		width: 1100px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1100px){
+	.content{
+		width: 100%;
+	}
+	.memoy-main .image{
+		width: 100%;
+	}
+	.memoy-main .image img{
+		width: 100%;
+	}
+	.memoy-main .memoy-event{
+		width: 100%;
+	}
+}
+
 
 
 
