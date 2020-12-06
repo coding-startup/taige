@@ -75,6 +75,9 @@
 	margin-bottom: 44px;
 }
 /* 公司简介右边span 的设置 */
+.notice-main .content .intr{
+	height:194px;
+}
 .notice-main .content .intr .title-page span{
 	color:#444;
 }
@@ -84,41 +87,8 @@
 .notice-main .content .intr .title-page span a{
 	color:rgb(85,26,139);
 }
-/* 设置主体右边 .intr-comment 里 的整体内容*/
-.notice-main .content .intr .intr-comment{
-	width: 100%;
-}
-/* 第一张图片 */
-.notice-main .content .intr .intr-comment .address{
-	width: 100%;
-	padding-bottom:17px;
-	border-bottom: 1px dashed #ddd;
-}
-.notice-main .content .intr .intr-comment .address img{
-	width: 800px;
-}
-.notice-main .content .intr .intr-comment .article-content{
-	color:#555555;
-	font-size:13px;
-	padding-top:32px;
-	border-bottom: 1px dashed #ddd;
-}
-/* 文章 */
-.notice-main .content .intr .intr-comment .article-content p{
-	line-height:26px;
-	margin-bottom: 32px;
-}
-.notice-main .content .intr .intr-comment .article-content p:last-child{
-	margin-bottom: 6px;
-}
-/* 第二张图片 */
-.notice-main .content .intr .intr-comment .notice-image{
-	border-bottom: 1px solid #ddd;
-}
-.notice-main .content .intr .intr-comment .notice-image img{
-	margin-top:24px;
-	margin-bottom: 145px;
-}
+
+
 /* 媒体查询开始 */
 /* 大于1100px */
 @media screen and (min-width:1100px) {
@@ -130,9 +100,6 @@
 /* 在768px和1100px中间 */
 @media screen and (min-width:768px) and (max-width:1100px){
 	.content{
-		width: 100%;
-	}
-	.notice-main .content .intr .intr-comment .address img{
 		width: 100%;
 	}
 }
@@ -149,8 +116,5 @@
 	.notice-main .content .notice-filue .mediatab a{
 		width: 100%;
 		max-width:100%;
-	}
-	.notice-main .content .intr .intr-comment .address img{
-		width: 100%;
 	}
 }
