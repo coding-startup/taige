@@ -2,7 +2,7 @@ $(function () {
   const navListArr = [
     {
       title: '首页',
-      href: '#',
+      href: '/taige/index.html',
       children: []
     },
     {
@@ -11,27 +11,27 @@ $(function () {
         {
           iconUnicode: '&#xe616;',
           title: '公司简介',
-          href: '#'
+          href: '/taige/pages/page-2/company-profile/company-profile.html'
         },
         {
           iconUnicode: '&#xe62f;',
           title: '创新开放',
-          href: '#'
+          href: '/taige/pages/page-2/innovation-opening/innovation.html'
         },
         {
           iconUnicode: '&#xe675;',
           title: '大事记',
-          href: '#'
+          href: '/taige/pages/page-2/memorabilia/memorabilia.html'
         },
         {
           iconUnicode: '&#xe601;',
           title: '太格理念',
-          href: '#'
+          href: '/taige/pages/page-2/taige-idea/idea.html'
         },
         {
           iconUnicode: '&#xe65f;',
           title: '姿势荣誉',
-          href: '#'
+          href: '/taige/pages/page-2/qualifications-honors/honors.html'
         }
       ]
     },
@@ -41,12 +41,12 @@ $(function () {
         {
           iconUnicode: '&#xe604;',
           title: '新闻资讯',
-          href: '#'
+          href: '/taige/pages/page-3/Journalism/Journalism.html'
         },
         {
           iconUnicode: '&#xe661;',
           title: '行业咨询',
-          href: '#'
+          href: '/taige/pages/page-3/industry/industry.html'
         }
       ]
     },
@@ -56,22 +56,22 @@ $(function () {
         {
           iconUnicode: '&#xe858;',
           title: '解决方案',
-          href: '#'
+          href: '/taige/pages/page-4/page-1/index.html'
         },
         {
           iconUnicode: '&#xe606;',
           title: '产品中心',
-          href: '#'
+          href: '/taige/pages/page-4/page-2/index.html'
         },
         {
           iconUnicode: '&#xe61c;',
           title: '应用业绩',
-          href: '#'
+          href: '/taige/pages/page-4/page-3/index.html'
         },
         {
           iconUnicode: '&#xe617;',
           title: '服务与支持',
-          href: '#'
+          href: '/taige/index.html'
         }
       ]
     },
@@ -81,17 +81,17 @@ $(function () {
         {
           iconUnicode: '&#xe600;',
           title: '致梦想者',
-          href: '#'
+          href: '/taige/pages/page-5/Cause/dreamer.html'
         },
         {
           iconUnicode: '&#xe619;',
           title: '人才理念',
-          href: '#'
+          href: '/taige/pages/page-5/personnel/idea.html'
         },
         {
           iconUnicode: '&#xe60b;',
           title: '加入太格',
-          href: '#'
+          href: '/taige/pages/page-5/JoinTiger/recruit.html'
         }
       ]
     },
@@ -101,7 +101,7 @@ $(function () {
         {
           iconUnicode: '&#xe638;',
           title: '公司公告',
-          href: '#'
+          href: '/taige/pages/page-6/company-notice/notice.html'
         }
       ]
     }
@@ -177,7 +177,7 @@ $(function () {
   $.each(navListArr, (index, item) => {
     const nav = $(
       $('<div/>').append(
-        $('<li/>', { class: 'nav'}).append(
+        $('<li/>', { class: 'navs'}).append(
           $('<div/>', { class: 'title' }).append(
             item.children && item.children.length ? (
               $('<div/>', { class: 'text', text: item.title })
