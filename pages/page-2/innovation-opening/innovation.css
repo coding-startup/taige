@@ -1,0 +1,157 @@
+.innovation-main {
+	width: 100%;
+}
+.innovation-main a:hover {
+	text-decoration: none;
+}
+
+.innovation-main .content .innovation-filue a {
+	color: inherit;
+}
+
+.innovation-main .content {
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.innovation-main .content .innovation-filue {
+	width: 21%;
+	max-width: 230px;
+	background: #f3f3f3;
+	float: left;
+}
+
+.innovation-main .content .innovation-filue>li:first-child {
+	height: 65px;
+	line-height: 65px;
+	color: #ce2a2b;
+	font-size: 23px;
+	padding-left: 15px;
+	padding-right: 16px;
+}
+
+.innovation-main .content .innovation-filue .mediatab {
+	height: 65px;
+	background: #f3f3f3;
+	line-height: 65px;
+	font-size: 13px;
+	padding-right: 16px;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 1px 0 0 #f3f3f3;
+}
+
+.innovation-main .content .innovation-filue .things {
+	border-left: 5px solid #ce2a2b;
+	background: #fff;
+}
+
+.innovation-main .content .innovation-filue .mediatab a {
+	margin-left: 15px;
+	width: 100%;
+	max-width: 215px;
+	display: inline-block;
+	padding-right: 16px;
+}
+
+.innovation-main .content .innovation-filue .mediatab a span {
+	float: right;
+	color: #CE2A2B;
+}
+/* 主页右边 */
+.innovation-main .content .intr {
+	float: right;
+	width: 77%;
+}
+
+
+.innovation-main .content .intr .title-page{
+	height: 65px;
+	line-height: 65px;
+	border-bottom: 1px solid #ddd;
+	font-size: 16px;
+	color: #000;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+.innovation-main .content .intr .title-page span{
+	color:#444;
+}
+.innovation-main .content .intr .title-page span+span{
+	font-size:13px;
+}
+.innovation-main .content .intr .title-page span a{
+	color:rgb(85,26,139);
+}
+.innovation-main .content .intr .intr-comme{
+	width: 100%;
+}
+.innovation-main .content .intr .intr-comment .address{
+	width: 100%;
+	padding-bottom:17px;
+}
+.innovation-main .content .intr .intr-comment .address img{
+	width: 800px;
+}
+.innovation-main .content .intr .intr-comment .article-content{
+	margin-top: 28px;
+	border-bottom:1px solid #ddd;
+}
+.innovation-main .content .intr .intr-comment .article-content>div>p{
+	color:#CA1617;
+	font-size:16px;
+	line-height:40px;
+	border-bottom:1px dashed #ddd;
+	margin-bottom: 32px;
+}
+.innovation-main .content .intr .intr-comment .article-content>div>span{
+	color:#555555;
+	font-size:13px;
+	display:block;
+	margin-bottom: 20px;
+	line-height:26px;
+}
+.innovation-main .content .intr .intr-comment .article-content>div:nth-child(4) span{
+	margin-bottom:0;
+}
+.innovation-main .content .intr .intr-comment .article-content>div:nth-child(4) span+span{
+	margin-bottom:20px;
+}
+.innovation-main .content .intr .intr-comment .article-content>div:nth-child(5){
+	margin-bottom:187px;
+}
+.innovation-main .content .intr .intr-comment .article-content>div:nth-child(5) span{
+	margin-bottom:0;
+}
+@media screen and (min-width:1100px) {
+	.content{
+		width: 1100px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1100px){
+	.content{
+		width: 100%;
+	}
+	.innovation-main .content .intr .intr-comment .address img{
+		width: 100%;
+	}
+}
+@media screen and (max-width:768px){
+	.content{
+		width: 100%;
+	}
+	.innovation-main .content .innovation-filue,.innovation-main .content .intr {
+		float:none;
+		width: 100%;
+		max-width:100%;
+	}
+	.innovation-main .content .innovation-filue .mediatab a{
+		width: 100%;
+		max-width:100%;
+	}
+	.innovation-main .content .intr .intr-comment .address img{
+		width: 100%;
+	}
+}

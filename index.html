@@ -3,16 +3,425 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./lib/css/animate.min@4.1.1.css">
+  <link rel="stylesheet" href="./lib/css/ww-index.css">
+  <link rel="stylesheet" href="./template/common/header/index.css">
+  <link rel="stylesheet" href="./template/common/footer/index.css">
+  <link rel="stylesheet" href="./assets/iconfont/iconfont.css">
+  <link href="https://cdn.bootcss.com/Swiper/4.2.2/css/swiper.min.css" rel="stylesheet">
   <title>太格时代</title>
 </head>
 <body>
-  <div id="app">Hello World</div>
+  <div id="tg-index">
+	<div id="header"></div>
+    <!-- 头轮播 -->
+    <div class="wrap">
+      <!--banner-->
+      <div class="swiper-container mySwiper1">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a href="#">
+                      <img src="./img/1.jpg" title="">
+                  </a>
+              </div>
+              <div class="swiper-slide">
+                  <a href="#">
+                      <img src="./img/2.jpg" title=""/>
+                  </a>
+              </div>
+              <div class="swiper-slide">
+                  <a href="#">
+                      <img src="./img/3.jpg" title=""/>
+                  </a>
+              </div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+          
+          
+          <!--自定义导航按钮-->
+          <!--<div class="swiper-button-prev mySwiperBtn"><</div>
+          <div class="swiper-button-next mySwiperBtn">></div>-->
+      </div>
+      <!-- 如果需要导航按钮 -->
+      <div class="swiper-button-prev mySwiperBtn"></div>
+      <div class="swiper-button-next mySwiperBtn"></div>
+
+
+  <!-- 创新运维 -->
+  <div class="describe">
+    <div class="describe-child">
+      <div class="describe-child1">
+          <p>创新运维，智慧交通</p>
+          <span>以持续创新助力大国速度，业内首次提出智慧运维理念，以尖端科技构建安全稳定的轨道交通供电运维全产品解决方案</span>
+      </div>
+      <div class="describe-child2 describe-child2-left" style="opacity: 1;">
+          <img src="./img/bg11.png"><br>
+          <a href="#" class="to-btn">开启交通之旅&gt;&gt;</a>
+      </div>
+      <div class="describe-child2 describe-child2-right">
+          <div class="describe-child2-d describe-child2-item1" style="left: 5%; opacity: 1;">
+            <div>
+              <img src="./img/bg.png">
+              <p><span>一个平台</span></p>
+            </div>
+            <p>
+              轨道交通自动化综合管理平台
+            </p>
+          </div>
+          <div class="describe-child2-d describe-child2-item2" style="left: 5%; opacity: 1;">
+            <div>
+              <img src="./img/bg.png">
+              <p><span>两大领域</span></p>
+            </div>
+            <p>
+              电气化铁路、城市轨道交通
+            </p>
+          </div>
+          <div class="describe-child2-d describe-child2-item3" style="left: 5%; opacity: 1;">
+            <div>
+              <img src="./img/bg.png">
+              <p><span>四大核心解决方案</span></p>
+            </div>
+            <p>
+              铁路供电自动化系统、铁路调度自动化系统<br>城市轨道交通自动化、轨道交通集成服务设备
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- 产品解决方案 -->
+  <div class="project">
+    <div>
+      <div class="describe-child1">
+        <p>产品与解决方案</p>
+        <span>通过基于供电运维管理平台的智能系统及核心智能化设备，生态整合各类数据及信息，为客户提供一流的产品，一流的服务</span>
+      </div>
+      <div>
+        <div class="project-child transition">
+          <div class="transition">
+            <span class="iconfont"></span>
+            <p>铁路供电自动化系统</p>
+          </div>
+          <div class="project-child1">
+            <ul>
+              <li><a href="#">接触网开关监控系统</a></li>
+              <li><a href="#">远方测控终端监控系统</a></li>
+              <li><a href="#">变电站综合自动化系统</a></li>
+              <li><a href="#">变电站视频安全监控系统</a></li>
+              <li><a href="#">变电站绝缘在线监控系统</a></li>
+              <li><a href="#">数字压互测控切换装置</a></li>
+              <li><a href="#">变电站微机五防监控系统</a></li>
+              <li><a href="#">隧道照明及防灾救援系统</a></li>
+              <li><a href="#">站房环境及机电设备监控系统</a></li>
+            </ul>
+            <a href="#">了解详情</a>
+          </div>
+        </div>
+        <div class="project-child transition project-child-on">
+          <div class="transition">
+            <span class="iconfont"></span>
+            <p>铁路调度自动化系统</p>
+          </div>
+          <div class="project-child1">
+            <ul>
+              <li><a href="#">供电调度SCADA系统</a></li>
+              <li><a href="#">供电信息管理系统</a></li>
+              <li><a href="#">6C系统综合数据中心</a></li>
+            </ul>
+            <a href="#">了解详情</a>
+          </div>
+        </div>
+        <div class="project-child transition">
+          <div class="transition">
+            <span class="iconfont"></span>
+            <p>城市轨道交通自动化系统 </p>
+          </div>
+            <div class="project-child1">
+              <ul>
+                <li><a href="#">可视化接地监控系统</a></li>
+                <li><a href="#">车辆段微机误防闭锁系统</a></li>
+                <li><a href="#">杂散电流防护和监测系统</a></li>
+                <li><a href="#">机电设备监控系统</a></li>
+                <li><a href="#">电力监控系统PSCADA</a></li>
+                <li><a href="#">综合安防系统</a></li>
+              </ul>
+              <a href="#">了解详情</a>
+            </div>
+        </div>
+        <div class="project-child transition">
+          <div class="transition">
+            <span class="iconfont"></span>
+            <p>轨道交通集成服务设备</p>
+        </div>
+          <div class="project-child1">
+            <ul>
+              <li><a href="#">站段供电检测、检验设备</a></li>
+              <li><a href="#">车辆段及综合基地设备</a></li>
+              <li><a href="#">地铁设备集成</a></li>
+            </ul>
+            <a href="#">了解详情</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 应用业绩 -->
+  <div class="show">
+    <div>
+      <div class="describe-child1">
+        <p>应用业绩</p>
+        <span>眼见为实,我们做的每一份都有记录,让客户亲眼见证质量,不忘初心的企业理念</span>
+      </div>
+      <div class="show-banner-find">
+        <a href="javascript:void(0)" class="iconfont first-a"><</a>
+        <a href="javascript:void(0)" class="iconfont first-a2">></a>
+        <div class="show-banner">
+          <div>
+            <div style="left: -100%;">
+              <div>
+                <a href="#">
+                  <img src="img/asdf1.png">
+                  <div class="transition"></div>
+                </a>
+                <p class="picture_title"> 
+                  <span>铁路供电综合SCADA系统</span> 
+                </p>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="img/asdf3.JPG">
+                  <div class="transition"></div>
+                </a>
+                <p class="picture_title"> 
+                  <span>接触网隔开监控系统</span> 
+                </p>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="img/asdf5.jpg">
+                  <div class="transition"></div>
+                </a>
+                <p class="picture_title"> 
+                  <span>隧道照明及防灾监控系统</span> 
+                </p>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="img/asdf7.jpg">
+                  <div class="transition"></div>
+                </a>
+                <p class="picture_title"> 
+                  <span>变电站综合自动化及视频监控系统</span> 
+                </p>
+              </div>
+            </div>
+              <div style="left: -100%;">
+                <div>
+                  <a href="#">
+                    <img src="img/asdf2.png">
+                    <div class="transition"></div>
+                  </a>
+                  <p class="picture_title"> 
+                    <span>供电管理信息系统及6C数据中心</span> 
+                  </p>
+                </div>
+              <div>
+                <a href="#">
+                  <img src="img/asdf4.jpg">
+                  <div class="transition"></div>
+                </a>
+                <p class="picture_title"> 
+                  <span>接触网隔开监控系统</span> 
+                </p>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="img/asdf6.png">
+                  <div class="transition"></div>
+                </a>
+                <p class="picture_title"> 
+                  <span>车站机电设备监控(BAS)</span> 
+                </p>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="img/asdf8.jpg">
+                  <div class="transition"></div>
+                </a>
+                <p class="picture_title"> 
+                  <span>轨道交通设备集成服务</span> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- 新闻动态 -->
+    <div class="news">
+      <div class="describe-child1">
+          <p>新闻动态</p>
+          <span>以持续创新助力大国速度，业内首次提出智慧运维理念，以尖端科技构建安全稳定的轨道交通供电运维全产品解决方案</span>
+      </div>
+      <div class="news1 news0">
+          <div class="news1-1">
+              <a href="javascript:void(0)" class="thisbg">
+                  公司新闻
+              </a><a href="javascript:void(0)">
+                  行业资讯
+              </a>
+          </div>
+          <div class="news1-2">
+            <div class="news1-item">
+              <div>
+                <a href="#">
+                  <img src="./img/news.jpg">
+                  <div class="news1-mark">
+                    <div class="news1-bg"></div>
+                    <div class="news1-content">
+                      <b>太格时代入驻南昌轨道交通千亿产业园</b>
+                      <p>2020年11月16日，董事长黄军、总经理刘升权，副总经理蒋士林代表我司出席了南昌轨道交通产业园（一期）重点项目签约仪式，与南昌轨道交通集   </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="news2 news0">
+        <div class="news2-1">
+            <div class="news2-1-1"><b>18</b>
+                <p>2020-11</p>
+            </div>
+            <div class="news2-1-2">
+                <p>太格时代入驻南昌轨道交通千亿产业园 </p>
+                <span>太格时代入驻南昌轨道交通千亿产业园 </span>
+            </div>
+        </div>
+        <div class="news2-1">
+            <div class="news2-1-1"><b>27</b>
+                <p>2020-10</p>
+            </div>
+            <div class="news2-1-2">
+                <p>江西省省委常委、副省长吴忠琼一行到太格时代调研指导 </p>
+                <span>江西省省委常委、副省长吴忠琼一行到太格时代调研指导 </span>
+            </div>
+        </div>
+        <div class="news2-1">
+            <div class="news2-1-1"><b>18</b>
+                <p>2020-11</p>
+            </div>
+            <div class="news2-1-2">
+                <p>国泰集团2020年年中工作会暨“十四五”发展规划研讨会圆满 </p>
+                <span>国泰集团2020年年中工作会暨“十四五”发展规划研讨会圆满 </span>
+            </div>
+        </div>
+        <div class="news2-1">
+            <div class="news2-1-1"><b>29</b>
+                <p>2019-11</p>
+            </div>
+            <div class="news2-1-2">
+                <p>交通强国铁路先行，太格携手国泰勇创新时代 </p>
+                <span>交通强国铁路先行，太格携手国泰勇创新时代 </span>
+            </div>
+        </div>
+        <a href="#" class="to-btn">查看更多>></a>
+      </div>
+  </div>
+  <!-- 底部 -->
+  <div class="adv">
+    <div>
+      <p>曾经磨难，曾经风雨，一路追求，一路奋斗，愿与拼搏自强，踏实负责，专业可靠的逐梦者携手共进 —— 太格时代，期待您的加入</p>
+      <a href="# " class="to-btn">开启太格梦想>></a>
+    </div>
+  </div>
+  <div class="tel">
+    <p><span class="iconfont"></span>&nbsp;售后服务热线 : <span class="tel_text">400-6688-050 </span></p>
+    <span><span>北京总公司电话:010-63356521</span><span>江西分公司电话:0791-83810552</span></span>
+  </div>
+</div>
+<div id="footer"></div>
+  </div>
+  <script src="./lib/js/swiper.min.js"></script>
+  <script src="./lib/js/rem.js"></script>
   <script src="./lib/js/jquery.min@2.0.0.js"></script>
   <script src="./lib/js/popper.min@1.16.0.js"></script>
   <script src="./lib/js/bootstrap.min@4.5.0.js"></script>
-  <script type="module">
-    import { demo } from './lib/utils/utils.js'
-  </script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/Swiper/4.2.2/js/swiper.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script> -->
+
 </body>
+<script>        
+  $(function(){
+	  $('#header').load('./template/common/header/index.html', function () {
+		  $(this).append(
+			$('<script/>', { src: './template/common/header/index.js'})
+		  )
+	  })
+	  $('#footer').load('./template/common/footer/index.html', function () {
+		  $(this).append(
+			$('<script/>', { src: './template/common/footer/index.js'})
+		  )
+	  })
+    var mySwiper = new Swiper ('.mySwiper1', {
+      loop: true,
+      effect : 'slide',//slide的切换效果，默认为"slide"（位移切换），可设置为'slide'（普通切换、默认）,"fade"（淡入）"cube"（方块）"coverflow"（3d流）"flip"（3d翻转）。
+      autoplay : {
+      delay:3000,
+      disableOnInteraction: false,//用户操作swiper之后，是否禁止autoplay。默认为true：停止。
+    },
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable :true,//此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+    },
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    }) 
+    
+})
+  function describeChild2Move(){
+    $(".describe-child2-left").animate({opacity:"1"},2000);        
+    setTimeout(function(){
+        $(".describe-child2-item1").animate({left:'5%',opacity:"1"},1000);
+    },500);
+    setTimeout(function(){
+        $(".describe-child2-item2").animate({left:'5%',opacity:"1"},1000);
+    },1000);
+    setTimeout(function(){
+        $(".describe-child2-item3").animate({left:'5%',opacity:"1"},1000);
+},1500);
+$(function(){
+  $(".mySwiper1").mouseover(function (){
+    $(".mySwiperBtn").show();
+  }).mouseout(function (){
+    $(".mySwiperBtn").hide();
+  });
+})
+
+
+}   
+  var x=0;
+    $(window).on("scroll",function(){
+      var top=$(document).scrollTop();
+      if(top>150){
+        $(window).off("scroll");
+        // console.log(top);
+        describeChild2Move();	
+      }
+    });
+    
+    // 产品解决方案动画切换效果
+    $(".project-child").mouseover(function(){
+        $(this).addClass("project-child-on").siblings().removeClass("project-child-on");
+        
+    });
+</script>
 </html>
