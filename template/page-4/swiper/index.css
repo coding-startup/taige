@@ -39,7 +39,7 @@
 .--swiper-container .swiper-container .swiper-wrapper .swiper-slide .cover-wrap .img {
   transition: transform 300ms;
   width: 100%;
-  height: 160px;
+  max-height: 160px;
 }
 
 .--swiper-container .swiper-container .swiper-wrapper .swiper-slide .cover-wrap .mask {

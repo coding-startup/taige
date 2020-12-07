@@ -1,0 +1,189 @@
+.memoy-main{
+	width: 100%;
+	background-image:url(../../../assets/imgs/page2/live.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.memoy-main .clearfix{
+	content:"";
+	display:block;
+	clear:both;
+}
+.memoy-main .content{
+	width: 1100px;
+	margin:0 auto;
+	
+}
+.memoy-main .image{
+	width: 1100px;
+}
+.memoy-main .image img{
+	width: 100%;
+}
+.memoy-main .memoy-event{
+	width: 100%;
+}
+.memoy-main .memoy-event .memoy-event-one,.memoy-main .memoy-event .memoy-event-two{
+	width: 100%;
+}
+.memoy-main .memoy-event .memoy-event-one .memoy-event-left,.memoy-main .memoy-event .memoy-event-one .memoy-event-right{
+	float:left;
+	width:50%;
+}
+
+.memoy-main .memoy-event .memoy-event-one .memoy-event-left .year{
+	margin-right: 30px;
+	text-align:right;
+	height: 71px;
+	position:relative;
+	line-height:71px;
+}
+.memoy-main .memoy-event .memoy-event-one .memoy-event-left .year .circle{
+	height: 16px;
+	width: 16px;
+	background: #b81d19;
+	border-radius: 10px;
+	position: absolute;
+	top: 34px;
+	right:-38px;
+}
+.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event{
+	padding-left:30px;
+	border-left: 1px solid #b81d19;
+	box-shadow: -1px 0 0 0 #b81d19;
+	height: 340px;
+	padding-top:30px;
+}
+.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event h3 p{
+	line-height: 36px;
+	font-size:18px;
+}
+.memoy-main .memoy-event .memoy-event-two{
+	width: 100%;
+}
+.memoy-main .memoy-event .memoy-event-two .memoy-event-left,.memoy-main .memoy-event .memoy-event-two .memoy-event-right{
+	float:left;
+	width: 50%;
+}
+.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event{
+	padding-right:30px;
+	border-right: 1px solid #b81d19;
+	box-shadow: 1px 0 0 0 #b81d19;
+	height: 340px;
+}
+.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event .event-word{
+	margin-left: 104px;
+}
+.memoy-main .event-word{
+	line-height: 60px;
+	font-size: 18px;
+	border-radius: 20px;
+	width: 80%;
+	display: inline-block;
+	padding: 0 20px;
+	margin-bottom: 20px;
+	color: #fff;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: #30344F;
+	font-weight: normal;
+}
+.memoy-main .memoy-event .memoy-event-two .memoy-event-right{
+	padding-left: 30px;
+	text-align:left;
+	height: 71px;
+	position:relative;
+	line-height:71px;
+}
+.memoy-main .memoy-event .memoy-event-two .memoy-event-right .year .circle{
+	height: 16px;
+	width: 16px;
+	background: #b81d19;
+	border-radius: 10px;
+	position: absolute;
+	top: 34px;
+	left:-8px;
+}
+.memoy-event-right-height{
+	height:150px!important;
+}
+@media screen and (min-width:1100px) {
+	.content{
+		width: 1100px;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1100px){
+	.content{
+		width: 100%!important;
+	}
+	.memoy-main .image{
+		width: 100%;
+	}
+	.memoy-main .image img{
+		width: 100%;
+	}
+	.memoy-main .memoy-event{
+		width: 100%;
+	}
+}
+@media screen and (max-width:768px) {
+	.content{
+		width:100%!important;
+	}
+	.memoy-main .image{
+		width: 100%;
+	}
+	.memoy-main .image img{
+		width: 100%;
+	}
+	.memoy-main .memoy-event{
+		width: 100%;
+	}
+	.memoy-main .memoy-event .memoy-event-one .memoy-event-left .year,.memoy-main .memoy-event .memoy-event-two .memoy-event-right .year{
+		display:none;
+		width:0;
+	}
+	.memoy-main .memoy-event .memoy-event-one,.memoy-main .memoy-event .memoy-event-two{
+		height: 150px;
+	}
+	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event,.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event{
+		border-right: none;
+		box-shadow: none;
+	}
+	.memoy-main .memoy-event .memoy-event-one .memoy-event-right,.memoy-main .memoy-event .memoy-event-two .memoy-event-left{
+	width:100%;
+	}
+	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event,.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event{
+		height:150px
+	}
+	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event .event-word,.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event{
+		line-height:20px;
+	}
+	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event .event-word{
+		line-height:20px;
+	}
+	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event .event-word>p{
+		margin-bottom:0;
+	}
+	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event .event-word>p,.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event .event-word{
+		line-height:20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

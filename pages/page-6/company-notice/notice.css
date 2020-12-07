@@ -1,0 +1,120 @@
+.notice-main {
+	width: 100%;
+}
+/* 给a标签设置重置样式 */
+.notice-main a:hover {
+	text-decoration: none;
+}
+.notice-main .content .notice-filue a {
+	color: inherit;
+}
+/* content设置 */
+.notice-main .content {
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+}
+/* 主体左边整体样式 */
+.notice-main .content .notice-filue {
+	width: 21%;
+	max-width: 230px;
+	background: #f3f3f3;
+	float: left;
+}
+/* 走进太格 */
+.notice-main .content .notice-filue>li:first-child {
+	height: 65px;
+	line-height: 65px;
+	color: #ce2a2b;
+	font-size: 23px;
+	padding-left: 15px;
+	padding-right: 16px;
+}
+/* 从公司简介开始的整体li的样式 */
+.notice-main .content .notice-filue .mediatab {
+	height: 65px;
+	background: #f3f3f3;
+	line-height: 65px;
+	font-size: 13px;
+	padding-right: 16px;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 1px 0 0 #f3f3f3;
+}
+/* 设置不同样式的css  border 和background */
+.notice-main .content .notice-filue .things {
+	border-left: 5px solid #ce2a2b;
+	background: #fff;
+}
+/* li 里面的a 的设置 */
+.notice-main .content .notice-filue .mediatab a {
+	margin-left: 15px;
+	width: 100%;
+	max-width: 215px;
+	display: inline-block;
+	padding-right: 16px;
+}
+/* li 里面的a 的 span的设置 */
+.notice-main .content .notice-filue .mediatab a span {
+	float: right;
+	color: #CE2A2B;
+}
+/* 主页右边 */
+.notice-main .content .intr {
+	float: right;
+	width: 77%;
+}
+/* 公司简介的设置 */
+.notice-main .content .intr .title-page{
+	height: 65px;
+	line-height: 65px;
+	border-bottom: 1px solid #ddd;
+	font-size: 16px;
+	color: #000;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+/* 公司简介右边span 的设置 */
+.notice-main .content .intr{
+	height:194px;
+}
+.notice-main .content .intr .title-page span{
+	color:#444;
+}
+.notice-main .content .intr .title-page span+span{
+	font-size:13px;
+}
+.notice-main .content .intr .title-page span a{
+	color:rgb(85,26,139);
+}
+
+
+/* 媒体查询开始 */
+/* 大于1100px */
+@media screen and (min-width:1100px) {
+	.content{
+		width: 1100px;
+		margin: 0 auto;
+	}
+}
+/* 在768px和1100px中间 */
+@media screen and (min-width:768px) and (max-width:1100px){
+	.content{
+		width: 100%;
+	}
+}
+/* 小于768px*/
+@media screen and (max-width:768px){
+	.content{
+		width: 100%;
+	}
+	.notice-main .content .notice-filue,.notice-main .content .intr {
+		float:none;
+		width: 100%;
+		max-width:100%;
+	}
+	.notice-main .content .notice-filue .mediatab a{
+		width: 100%;
+		max-width:100%;
+	}
+}
