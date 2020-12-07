@@ -154,7 +154,8 @@
 	width:100%;
 	}
 	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event,.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event{
-		height:150px
+		margin-bottom: 20px;
+		height:200px
 	}
 	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event .event-word,.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event{
 		line-height:20px;
