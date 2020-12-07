@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="../../../assets/css/reset.css">
   <link rel="stylesheet" href="../../../assets/iconfont/iconfont.css">
   <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="../../../template/common/header/index.css"/>
+  <link rel="stylesheet" href="../../../template/common/footer/index.css"/>
+  <link rel="stylesheet" href="../../../lib/css/swiper.min@5.4.5.css"/>
+  <link rel="stylesheet" href="../../../template/page-4/swiper/index.css"/>
   <title>解决方案 - 太格时代</title>
   <style>
     #app {
@@ -535,28 +539,19 @@
   <script src="./index.js"></script>
   <script>
     $('#header').load('../../../template/common/header/index.html', function () {
-      $(this).prepend(
-        $('<link/>', { rel: 'stylesheet', href: '../../../assets/css/reset.css' }),
-        $('<link/>', { rel: 'stylesheet', href: '../../../assets/iconfont/iconfont.css' }),
-        $('<link/>', { rel: 'stylesheet', href: '../../../template/common/header/index.css' })
-      ).append(
+      $(this).append(
         $('<script/>', { src: '../../../template/common/header/index.js' })
       )
     })
 
     $('#footer').load('../../../template/common/footer/index.html', function () {
-      $(this).prepend(
-        $('<link/>', { rel: 'stylesheet', href: '../../../template/common/footer/index.css' })
-      ).append(
+      $(this).append(
         $('<script/>', { src: '../../../template/common/footer/index.js' })
       )
     })
 
     $('#swiper').load('../../../template/page-4/swiper/index.html', function () {
-      $(this).prepend(
-        $('<link/>', { rel: 'stylesheet', href: '../../../lib/css/swiper.min@5.4.5.css' }),
-        $('<link/>', { rel: 'stylesheet', href: '../../../template/page-4/swiper/index.css' })
-      ).append(
+      $(this).append(
         $('<script/>', { src: '../../../lib/js/swiper.min@5.4.5.js' }),
         $('<script/>', { src: '../../../template/page-4/swiper/index.js' })
       )
