@@ -146,8 +146,12 @@
 	.memoy-main .memoy-event .memoy-event-one,.memoy-main .memoy-event .memoy-event-two{
 		height: 150px;
 	}
-	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event,.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event{
+	.memoy-main .memoy-event .memoy-event-two .memoy-event-left .event{
 		border-right: none;
+		box-shadow: none;
+	}
+	.memoy-main .memoy-event .memoy-event-one .memoy-event-right .event{
+		border-left: none;
 		box-shadow: none;
 	}
 	.memoy-main .memoy-event .memoy-event-one .memoy-event-right,.memoy-main .memoy-event .memoy-event-two .memoy-event-left{
