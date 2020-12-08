@@ -247,9 +247,17 @@ html{overflow-x: hidden;}
     width: 23%;
     margin-left: 2.666%;
     float: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin-bottom:40px;
+
 /*    margin-bottom: 30px;*/
 }
-.project-child:first-child{margin: 0}
+.project-child:first-child{
+    margin: 0;
+}
 .project-child>.transition{
     background: #2e3450;
     height: .15rem;
@@ -260,21 +268,22 @@ html{overflow-x: hidden;}
     font-size: 50px;
     line-height: 100px;
 }
-/*.project-child:hover>.transition{
-    background: #ca1617
-}*/
-
 
 .project-child-on{
     transform: scale(1.1, 1.1);
     transition: .3s transform;
     border: 1px solid #00c1de;
     box-shadow: 0 0 20px rgba(0, 198, 226, 0.5);
+    position:relative;
+    margin-bottom:40px;
 }
 .project-child-on .transition{
     background: #ca1617
 }
-/******************************/
+
+
+
+
 .project-child1{
     text-align: left;
     font-size: 14px;
@@ -1413,8 +1422,10 @@ html{overflow-x: hidden;}
         width: 90px;
         font-size: 14px;
     }
-    .project-child{
+    #describeChild1{
         position: relative;
+        top:0;
+        left:0;
         
     }
     .project-child>div span{
@@ -1548,20 +1559,29 @@ html{overflow-x: hidden;}
         display: block;
     }
     .describe-child2-d>div p{
-        left: .6rem;
+        /* left: .6rem; */
         height:20px
     }
     .project-child{
         width: 45%;
-        margin-left: 3.4%;
+        margin-left: 2.4%;
+        position: relative;
+        top:0;
+        left:0;
     }
     .project-child:first-child{
-        margin-left: 3.4%;
+        margin-left: 2.4%;
     }
     .project-child>.transition{
         height:142px;
         /* background-color: red; */
     }
+    /* #describeChild1{
+        position: relative;
+        top:0;
+        left:0;
+        
+    } */
     .transition p{
         height:20px;
         /* background-color: blue; */
@@ -1745,8 +1765,8 @@ html{overflow-x: hidden;}
         height: .5rem
     }
     .news2-1-2{
-        width: 0.6rem;
-        width: 0.6rem;
+        width: 100%;
+        /* width: 0.6rem; */
     }
     .adv>div{
         padding-top: 0;
@@ -1819,7 +1839,21 @@ html{overflow-x: hidden;}
         padding: 20px;
     }
     .media3 .show-banner>div>div>div>a{
-        height: .48rem;
+        height: 40%;
         height: 195px;
+    }
+    
+    .show-banner img{
+        width: 100%;
+        height: 100%;
+    }
+    .show-banner>div>div>div>a{
+        display: block;
+        position: relative;
+        height: 160px;
+        border: 6px solid #afafaf;
+        /* padding: 5px;*/
+        max-height: 195px;
+        overflow: hidden;
     }
 }
