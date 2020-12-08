@@ -521,6 +521,7 @@ html{overflow-x: hidden;}
 }
 .news1-2>div>div{
     position: relative;
+    max-width:500px;
 }
 
 .news1-2 a{
@@ -529,6 +530,8 @@ html{overflow-x: hidden;}
     position: relative;
     z-index: 10;
     width: 100%;
+    max-width:500px;
+    /* _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1350?"1350px":""); */
     color: white;
     font-size: 15px;
     line-height: 20px;
@@ -541,6 +544,7 @@ html{overflow-x: hidden;}
     bottom:0;
     left:0;
     right:0;
+    max-width:500px;
     background: none repeat scroll 0 0;;
     transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
     
@@ -565,6 +569,7 @@ html{overflow-x: hidden;}
     right:0;
 
 }
+
 .news1-2 .news1-content b{
     display: inline-block;
     margin-top:100px;
@@ -580,7 +585,6 @@ html{overflow-x: hidden;}
     margin-top:48px;
     transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
     opacity: 0;
-
 }
 .news1-mark:hover p{
     margin-top:10px;
