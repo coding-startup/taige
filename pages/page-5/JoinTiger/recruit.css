@@ -67,7 +67,7 @@
 	font-size: 15px;
 }
 .box>p{
-	float: right;	
+	text-align: right;	
 }
 p>span{
 	display: inline-block;
