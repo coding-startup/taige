@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./lib/css/animate.min@4.1.1.css">
   <link rel="stylesheet" href="./lib/css/ww-index.css">
-  <link  rel =“ stylesheet ” href ="./template/common/header/index.css">
-  <link  rel =“ stylesheet ” href ="./template/common/footer/index.css">
+  <link rel="stylesheet" href="./lib/css/swiper.css">
+  <link rel="stylesheet" href ="./template/common/header/index.css">
+  <link rel="stylesheet" href ="./template/common/footer/index.css">
+  <link rel="stylesheet" href="./assets/iconfont/iconfont.css">
   <link href="https://cdn.bootcss.com/Swiper/4.2.2/css/swiper.min.css" rel="stylesheet">
   <title>太格时代</title>
 </head>
 <body>
   <div id="tg-index">
+	<div id="header"></div>
     <!-- 头轮播 -->
     <div class="wrap">
       <!--banner-->
@@ -84,7 +88,7 @@
     <!-- 产品解决方案 -->
     <div class="project">
       <div>
-        <div class="describe-child1" id="describeChild1">
+        <div class="describe-child1">
           <p>产品与解决方案</p>
           <span>通过基于供电运维管理平台的智能系统及核心智能化设备，生态整合各类数据及信息，为客户提供一流的产品，一流的服务</span>
         </div>
@@ -165,11 +169,15 @@
         <span>眼见为实,我们做的每一份都有记录,让客户亲眼见证质量,不忘初心的企业理念</span>
       </div>
       <div class="show-banner-find">
+      <!-- </div> -->
         <a href="javascript:void(0)" class="iconfont first-a"><</a>
         <a href="javascript:void(0)" class="iconfont first-a2">></a>
-        <div class="show-banner">
+        <div class="show-banner ">
+          <!-- <div class="swiper-container" id="mySwiper2"> -->
           <div>
-            <div style="left: -100%;">
+            <!-- <div class="swiper-wrapper"> -->
+            <div>
+              <!-- <div class="swiper-slide"> -->
               <div>
                 <a href="#">
                   <img src="img/asdf1.png">
@@ -207,16 +215,17 @@
                 </p>
               </div>
             </div>
-              <div style="left: -100%;">
-                <div>
-                  <a href="#">
-                    <img src="img/asdf2.png">
-                    <div class="transition"></div>
-                  </a>
-                  <p class="picture_title"> 
-                    <span>供电管理信息系统及6C数据中心</span> 
-                  </p>
-                </div>
+            <!-- <div class="swiper-wrapper"> -->
+            <div>
+              <div>
+                <a href="#">
+                  <img src="img/asdf2.png">
+                  <div class="transition"></div>
+                </a>
+                <p class="picture_title"> 
+                  <span>供电管理信息系统及6C数据中心</span> 
+                </p>
+              </div>
               <div>
                 <a href="#">
                   <img src="img/asdf4.jpg">
@@ -258,14 +267,14 @@
       </div>
       <div class="news1 news0">
           <div class="news1-1">
-              <a href="javascript:void(0)" class="thisbg">
+              <a href="javascript:;" class="thisbg">
                   公司新闻
-              </a><a href="javascript:void(0)">
+              </a><a href="javascript:;">
                   行业资讯
               </a>
           </div>
           <div class="news1-2">
-            <div class="news1-marknews1-mark">
+            <div class="news1-item">
               <div>
                 <a href="#">
                   <img src="./img/news.jpg">
@@ -333,9 +342,11 @@
     <span><span>北京总公司电话:010-63356521</span><span>江西分公司电话:0791-83810552</span></span>
   </div>
 </div>
-  
-  <script src="./lib/js/swiper.min.js"></script>
+<div id="footer"></div>
+  </div>
+  <script src="./lib/js/swiper.js"></script>
   <script src="./lib/js/rem.js"></script>
+  <script src="./lib/js/index.js"></script>
   <script src="./lib/js/jquery.min@2.0.0.js"></script>
   <script src="./lib/js/popper.min@1.16.0.js"></script>
   <script src="./lib/js/bootstrap.min@4.5.0.js"></script>
@@ -346,27 +357,116 @@
 </body>
 <script>        
   $(function(){
+    $('#header').load('./template/common/header/index.html', function () {
+        $(this).append(
+            $('<script/>', { src: './template/common/header/index.js'})
+        )
+    })
+    $('#footer').load('./template/common/footer/index.html', function () {
+        $(this).append(
+            $('<script/>', { src: './template/common/footer/index.js'})
+        )
+    })
     var mySwiper = new Swiper ('.mySwiper1', {
-      loop: true,
-      effect : 'slide',//slide的切换效果，默认为"slide"（位移切换），可设置为'slide'（普通切换、默认）,"fade"（淡入）"cube"（方块）"coverflow"（3d流）"flip"（3d翻转）。
-      autoplay : {
-      delay:3000,
-      disableOnInteraction: false,//用户操作swiper之后，是否禁止autoplay。默认为true：停止。
+        loop: true,
+        effect : 'slide',//slide的切换效果，默认为"slide"（位移切换），可设置为'slide'（普通切换、默认）,"fade"（淡入）"cube"（方块）"coverflow"（3d流）"flip"（3d翻转）。
+        autoplay : {
+        delay:3000,
+        disableOnInteraction: false,//用户操作swiper之后，是否禁止autoplay。默认为true：停止。
     },
     // 如果需要分页器
     pagination: {
-      el: '.swiper-pagination',
-      clickable :true,//此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+        el: '.swiper-pagination',
+        clickable :true,//此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
     },
     // 如果需要前进后退按钮
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     }) 
-    
 })
-  function describeChild2Move(){
+
+$('.news1-1').find('a').click(function() {
+    // 为当前点击的导航加上高亮，其余的移除高亮
+    $(this).addClass('thisbg').siblings('a').removeClass('thisbg');
+});
+
+if (document.getElementsByClassName('show-banner-find')[0]) {
+    !function () {
+        var x1, x3 = 0, tt = 0, y = $('.show-banner>div>div>div').length / document.querySelectorAll('.show-banner>div>div').length;
+        $('.show-banner-find>a')[1].onmousedown = move;
+        function move() {
+            clearInterval(set);
+            if (window.innerWidth > 767) {
+                x3 = (x3 >= y - 3) ? 0 : (++x3);
+            } else if (window.innerWidth > 499) {
+                x3 = (x3 >= y - 2) ? 0 : (++x3);
+            } else {
+                x3 = (x3 >= y - 1) ? 0 : (++x3);
+            }
+            $('.show-banner>div>div').animate({ 'left': -x3 * 100 + '%' })
+            set = setInterval(function () {
+                $('.show-banner-find>a')[1].onmousedown();
+            }, 5000)
+        }
+        var set = setInterval(function () {
+            $('.show-banner-find>a')[1].onmousedown();
+        }, 5000)
+        $('.show-banner-find>a')[0].onmousedown = function () {
+            clearInterval(set);
+            if (window.innerWidth > 767) {
+                x3 = (x3 <= 0) ? y - 3 : (--x3);
+            } else if (window.innerWidth > 499) {
+                x3 = (x3 <= 0) ? y - 2 : (--x3);
+            } else {
+                x3 = (x3 <= 0) ? y - 1 : (--x3);
+            }
+            $('.show-banner>div>div').animate({ 'left': -x3 * 100 + '%' });
+            set = setInterval(function () {
+                $('.show-banner-find>a')[1].onmousedown();
+            }, 5000)
+        }
+
+        var dom = document.getElementsByClassName('show-banner-find')[0],
+            dom3 = $('.show-banner>div>div'),
+            x4;
+        dom.addEventListener('touchstart', function (event) {
+            var e = event || window.event;
+            x4 = e.changedTouches[0].pageX;
+            x2 = dom3[0].offsetLeft;
+            if (event.stopPropagation) { event.stopPropagation(); } else { event.cancelBubble = true };
+        })
+
+        dom.addEventListener('touchmove', function (event1) {
+            var e1 = event1 || window.event;
+            x1 = e1.changedTouches[0].pageX - x4;
+            if (x1 > 30 || x1 < -30) {
+                dom3.css('left', (x2 + x1) + 'px');
+            }
+        })
+        dom.addEventListener('touchend', function (e) {
+            if (x1 > 30) {
+                $('.show-banner-find>a')[0].onmousedown();
+            } else if (x1 < -30) {
+                $('.show-banner-find>a')[1].onmousedown();
+            }
+        })
+    } ()
+}
+
+// var swiper2 = new Swiper('#mySwiper2', {
+//   slidesPerView: 2,
+//   slidesPerColumn: 3,
+//   spaceBetween: 3,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+// });
+
+
+function describeChild2Move(){
     $(".describe-child2-left").animate({opacity:"1"},2000);        
     setTimeout(function(){
         $(".describe-child2-item1").animate({left:'5%',opacity:"1"},1000);
@@ -376,31 +476,29 @@
     },1000);
     setTimeout(function(){
         $(".describe-child2-item3").animate({left:'5%',opacity:"1"},1000);
-},1500);
-$(function(){
-  $(".mySwiper1").mouseover(function (){
-    $(".mySwiperBtn").show();
-  }).mouseout(function (){
-    $(".mySwiperBtn").hide();
-  });
-})
-
-
+    },1500);
+    $(function(){
+      $(".mySwiper1").mouseover(function (){
+          $(".mySwiperBtn").show();
+      }).mouseout(function (){
+          $(".mySwiperBtn").hide();
+      });
+  })
 }   
-  var x=0;
-    $(window).on("scroll",function(){
-      var top=$(document).scrollTop();
-      if(top>150){
+var x=0;
+$(window).on("scroll",function(){
+    var top=$(document).scrollTop();
+    if(top>150){
         $(window).off("scroll");
         // console.log(top);
         describeChild2Move();	
-      }
-    });
+    }
+});
+
+// 产品解决方案动画切换效果
+$(".project-child").mouseover(function(){
+    $(this).addClass("project-child-on").siblings().removeClass("project-child-on");
     
-    // 产品解决方案动画切换效果
-    $(".project-child").mouseover(function(){
-        $(this).addClass("project-child-on").siblings().removeClass("project-child-on");
-        
-    });
+});
 </script>
 </html>

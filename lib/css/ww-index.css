@@ -1,3 +1,5 @@
+
+
 *{
     border: none;
     padding: 0;
@@ -191,6 +193,12 @@ html{overflow-x: hidden;}
 .describe-child2{
     width: 45%;
 }
+.describe-child2 a:hover{
+    transform: scale(1.1, 1.1);
+transition: .5s transform;
+border: 1px solid #00c1de;
+box-shadow: 0 0 20px rgba(0, 198, 226, 0.5);
+}
 .describe-child2 img{
     width: 100%;
 }
@@ -247,17 +255,9 @@ html{overflow-x: hidden;}
     width: 23%;
     margin-left: 2.666%;
     float: left;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    margin-bottom:40px;
-
 /*    margin-bottom: 30px;*/
 }
-.project-child:first-child{
-    margin: 0;
-}
+.project-child:first-child{margin: 0}
 .project-child>.transition{
     background: #2e3450;
     height: .15rem;
@@ -268,22 +268,21 @@ html{overflow-x: hidden;}
     font-size: 50px;
     line-height: 100px;
 }
+/*.project-child:hover>.transition{
+    background: #ca1617
+}*/
+
 
 .project-child-on{
     transform: scale(1.1, 1.1);
     transition: .3s transform;
     border: 1px solid #00c1de;
     box-shadow: 0 0 20px rgba(0, 198, 226, 0.5);
-    position:relative;
-    margin-bottom:40px;
 }
 .project-child-on .transition{
     background: #ca1617
 }
-
-
-
-
+/******************************/
 .project-child1{
     text-align: left;
     font-size: 14px;
@@ -309,6 +308,8 @@ html{overflow-x: hidden;}
     position: absolute;
     bottom: 10px;
 }
+
+
 .show{
     width: 100%;
     background: #f9f9f9;
@@ -363,8 +364,7 @@ html{overflow-x: hidden;}
     background: none;
 }
 .show-banner>div>div>div img{
-    transition: all 0.5s ease 0s
-    widt
+   transition: all 0.5s ease 0s
 }
 .show-banner>div>div>div:hover img{
     transform: scale(1.1);
@@ -388,27 +388,15 @@ html{overflow-x: hidden;}
 .show-banner>div>div>div>a{
     display: block;
     position: relative;
-    height: 120px;
+    /* height: .17rem; */
     border: 6px solid #afafaf;
     /* padding: 5px;*/
     max-height: 195px;
     overflow: hidden;
 }
 .media3 .show-banner>div>div>div>a{
-    display:block;
-    height: .14rem;
+    /* height: .14rem; */
     max-height: 165px;
-    /* height:165px; */
-}
-.show-banner>div>div>div>a>img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .3);
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
 }
 .show-banner>div>div>div>a>div{
     position: absolute;
@@ -419,7 +407,6 @@ html{overflow-x: hidden;}
     height: 100%;
     width: 100%;
 }
-/*.show-banner>div>div>div>a>div:hover{background: none;}*/
 .show-banner-find>a{
     position: absolute;
     width: 60px;
@@ -521,7 +508,6 @@ html{overflow-x: hidden;}
 }
 .news1-2>div>div{
     position: relative;
-    max-width:500px;
 }
 
 .news1-2 a{
@@ -530,8 +516,6 @@ html{overflow-x: hidden;}
     position: relative;
     z-index: 10;
     width: 100%;
-    max-width:500px;
-    /* _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1350?"1350px":""); */
     color: white;
     font-size: 15px;
     line-height: 20px;
@@ -544,7 +528,6 @@ html{overflow-x: hidden;}
     bottom:0;
     left:0;
     right:0;
-    max-width:500px;
     background: none repeat scroll 0 0;;
     transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
     
@@ -569,7 +552,6 @@ html{overflow-x: hidden;}
     right:0;
 
 }
-
 .news1-2 .news1-content b{
     display: inline-block;
     margin-top:100px;
@@ -585,6 +567,7 @@ html{overflow-x: hidden;}
     margin-top:48px;
     transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
     opacity: 0;
+
 }
 .news1-mark:hover p{
     margin-top:10px;
@@ -603,6 +586,12 @@ html{overflow-x: hidden;}
     height: 100%; 
     margin-top:55px;
 }
+/* .news2 a:hover{
+    transform: scale(1.1, 1.1);
+    transition: .5s transform;
+    border: 1px solid #00c1de;
+    box-shadow: 0 0 20px rgba(0, 198, 226, 0.5);
+} */
 .news2-1{
     overflow: auto;
     border-bottom: 1px solid #ddd;
@@ -682,6 +671,13 @@ html{overflow-x: hidden;}
     background: #b81d19;
     color: white;
     margin: 20px auto 0 auto;
+    
+}
+.adv a:hover{
+    transform: scale(1.1, 1.1);
+    transition: .5s transform;
+    border: 1px solid #00c1de;
+    box-shadow: 0 0 20px rgba(0, 198, 226, 0.5);
 }
 .tel{
     height: 150px;
@@ -1426,10 +1422,9 @@ html{overflow-x: hidden;}
         width: 90px;
         font-size: 14px;
     }
-    #describeChild1{
+    .project-child{
         position: relative;
-        top:0;
-        left:0;
+        margin-bottom: 20px;
         
     }
     .project-child>div span{
@@ -1563,29 +1558,20 @@ html{overflow-x: hidden;}
         display: block;
     }
     .describe-child2-d>div p{
-        /* left: .6rem; */
+        left: .6rem;
         height:20px
     }
     .project-child{
         width: 45%;
-        margin-left: 2.4%;
-        position: relative;
-        top:0;
-        left:0;
+        margin-left: 3.4%;
     }
     .project-child:first-child{
-        margin-left: 2.4%;
+        margin-left: 3.4%;
     }
     .project-child>.transition{
         height:142px;
         /* background-color: red; */
     }
-    /* #describeChild1{
-        position: relative;
-        top:0;
-        left:0;
-        
-    } */
     .transition p{
         height:20px;
         /* background-color: blue; */
@@ -1769,8 +1755,8 @@ html{overflow-x: hidden;}
         height: .5rem
     }
     .news2-1-2{
-        width: 100%;
-        /* width: 0.6rem; */
+        width: 0.6rem;
+        width: 0.6rem;
     }
     .adv>div{
         padding-top: 0;
@@ -1778,7 +1764,7 @@ html{overflow-x: hidden;}
         width: 100%;
     }
     .adv{
-        height: 240px;
+        height: .5rem;
     }
     .tel>span>span:first-child{
         margin-right: 0;
@@ -1843,21 +1829,7 @@ html{overflow-x: hidden;}
         padding: 20px;
     }
     .media3 .show-banner>div>div>div>a{
-        height: 40%;
+        height: .48rem;
         height: 195px;
-    }
-    
-    .show-banner img{
-        width: 100%;
-        height: 100%;
-    }
-    .show-banner>div>div>div>a{
-        display: block;
-        position: relative;
-        height: 160px;
-        border: 6px solid #afafaf;
-        /* padding: 5px;*/
-        max-height: 195px;
-        overflow: hidden;
     }
 }
